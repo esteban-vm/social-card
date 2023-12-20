@@ -25,13 +25,14 @@
       @apply cursor-pointer hover:opacity-50 active:scale-95;
     }
 
-    hr {
+    hr,
+    [class^='card_'] {
       @apply w-full;
     }
 
     .card_header,
     .card_footer {
-      @apply flex w-full items-center justify-between;
+      @apply flex items-center justify-between;
     }
 
     .card_header,
@@ -57,7 +58,7 @@
     }
 
     .card_image {
-      @apply w-full grayscale hover:contrast-125 hover:grayscale-0 pointer-coarse:contrast-125 pointer-coarse:grayscale-0;
+      @apply grayscale hover:contrast-125 hover:grayscale-0 pointer-coarse:contrast-125 pointer-coarse:grayscale-0;
     }
 
     .card_info {

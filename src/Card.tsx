@@ -6,7 +6,7 @@ const Card: FC = () => {
     <article className='card'>
       <header className='card_header'>
         <div>
-          <img src='/assets/images/avatar.png' alt='developer' />
+          <img src='/assets/images/avatar.png' alt='avatar' />
           <div className='header_info'>
             <p>Developer</p>
             <p>@holajuniors</p>
@@ -14,7 +14,7 @@ const Card: FC = () => {
         </div>
         <FaEllipsisVertical />
       </header>
-      <img src='/assets/images/laptop.jpg' alt='background' className='card_image' />
+      <img src='/assets/images/laptop.jpg' alt='laptop' className='card_image' />
       <p className='card_info'>
         Estos desafíos han sido creado especialmente para mejorar tus habilidades y prepararte para el mundo real.
       </p>
