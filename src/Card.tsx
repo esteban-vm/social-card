@@ -18,7 +18,7 @@ const Card: FC = () => {
       <p className='card_info'>
         Estos desafíos han sido creado especialmente para mejorar tus habilidades y prepararte para el mundo real.
       </p>
-      <hr className='separator' />
+      <hr />
       <footer className='card_footer'>
         <span>
           <FaRegMessage className='icon_message' />

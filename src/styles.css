@@ -15,7 +15,7 @@
 
 @layer utilities {
   .card {
-    @apply animate-in fade-in zoom-in flex max-h-fit max-w-lg flex-col items-center justify-around gap-4 rounded-xl bg-white font-work-sans text-sm leading-tight tracking-tight text-slate-600 duration-1000 selection:bg-slate-900 selection:text-white motion-reduce:animate-none md:gap-5 md:text-base;
+    @apply flex max-h-fit max-w-lg flex-col items-center justify-around gap-4 rounded-xl bg-white font-work-sans text-sm leading-tight tracking-tight text-slate-600 duration-1000 animate-in fade-in zoom-in selection:bg-slate-900 selection:text-white motion-reduce:animate-none md:gap-5 md:text-base;
 
     img {
       @apply select-none;
@@ -25,13 +25,23 @@
       @apply cursor-pointer hover:opacity-50 active:scale-95;
     }
 
+    hr {
+      @apply w-full;
+    }
+
     .card_header,
     .card_footer {
-      @apply flex;
+      @apply flex w-full items-center justify-between;
+    }
+
+    .card_header,
+    .card_info,
+    .card_footer {
+      @apply px-4 md:px-5;
     }
 
     .card_header {
-      @apply w-full items-center justify-between px-4 pt-4 md:px-5 md:pt-5;
+      @apply pt-4 md:pt-5;
 
       img {
         @apply inline-block h-12 w-auto rounded-full bg-gray-300 contrast-125;
@@ -51,15 +61,11 @@
     }
 
     .card_info {
-      @apply px-4 text-black md:px-5;
-    }
-
-    .separator {
-      @apply w-full;
+      @apply text-black;
     }
 
     .card_footer {
-      @apply w-full items-center justify-between px-4 pb-4 md:px-5 md:pb-5;
+      @apply pb-4 md:pb-5;
 
       svg {
         @apply inline-block text-base transition-all md:text-xl;
