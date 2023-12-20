@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/work-sans.woff2');
+  }
+
+  body {
+    @apply flex min-h-screen items-center justify-center bg-gray-400 dark:bg-gray-900;
+  }
+}
+
+@layer utilities {
+  .card {
+    @apply animate-in fade-in zoom-in flex max-h-fit max-w-lg flex-col items-center justify-around gap-4 rounded-xl bg-white font-work-sans text-sm leading-tight tracking-tight text-slate-600 duration-1000 selection:bg-slate-900 selection:text-white motion-reduce:animate-none md:gap-5 md:text-base;
+
+    img {
+      @apply select-none;
+    }
+
+    svg {
+      @apply cursor-pointer hover:opacity-50 active:scale-95;
+    }
+
+    .card_header,
+    .card_footer {
+      @apply flex;
+    }
+
+    .card_header {
+      @apply w-full items-center justify-between px-4 pt-4 md:px-5 md:pt-5;
+
+      img {
+        @apply inline-block h-12 w-auto rounded-full bg-gray-300 contrast-125;
+      }
+
+      .header_info {
+        @apply ml-2 inline-block align-middle md:ml-3;
+
+        p {
+          @apply first:font-semibold first:text-black;
+        }
+      }
+    }
+
+    .card_image {
+      @apply w-full grayscale hover:contrast-125 hover:grayscale-0 pointer-coarse:contrast-125 pointer-coarse:grayscale-0;
+    }
+
+    .card_info {
+      @apply px-4 text-black md:px-5;
+    }
+
+    .separator {
+      @apply w-full;
+    }
+
+    .card_footer {
+      @apply w-full items-center justify-between px-4 pb-4 md:px-5 md:pb-5;
+
+      svg {
+        @apply inline-block text-base transition-all md:text-xl;
+      }
+
+      .icon_message,
+      .icon_heart {
+        @apply mr-2;
+      }
+
+      .icon_message {
+        @apply hover:text-sky-700;
+      }
+
+      .icon_heart {
+        @apply hover:text-pink-700;
+      }
+
+      .icon_bookmark {
+        @apply hover:text-emerald-700;
+      }
+    }
+  }
+}
