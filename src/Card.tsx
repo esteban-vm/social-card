@@ -3,7 +3,7 @@ import { FaEllipsisVertical, FaRegMessage, FaRegHeart, FaRegBookmark } from 'rea
 
 const Card: FC = () => {
   return (
-    <article className='card'>
+    <div className='card'>
       <header className='card_header'>
         <div>
           <img src='/assets/images/avatar.png' alt='avatar' />
@@ -16,7 +16,7 @@ const Card: FC = () => {
       </header>
       <img src='/assets/images/laptop.jpg' alt='laptop' className='card_image' />
       <p className='card_info'>
-        Estos desafíos han sido creado especialmente para mejorar tus habilidades y prepararte para el mundo real.
+        Estos desafíos han sido creados especialmente para mejorar tus habilidades y prepararte para el mundo real.
       </p>
       <hr />
       <footer className='card_footer'>
@@ -30,7 +30,7 @@ const Card: FC = () => {
         </span>
         <FaRegBookmark className='icon_bookmark' />
       </footer>
-    </article>
+    </div>
   )
 }
 
