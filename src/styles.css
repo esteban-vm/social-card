@@ -35,9 +35,7 @@
       @apply flex items-center justify-between;
     }
 
-    .card_header,
-    .card_info,
-    .card_footer {
+    > :not(hr, .card_image) {
       @apply px-4 md:px-5;
     }
 
